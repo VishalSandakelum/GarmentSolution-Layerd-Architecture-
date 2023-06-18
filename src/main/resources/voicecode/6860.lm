@@ -1,0 +1,53 @@
+Language model created by QuickLM on Tue Apr  4 13:07:59 EDT 2023
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 7 sentences and 9 words
+
+\data\
+ngram 1=9
+ngram 2=14
+ngram 3=7
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.6232 CLTHES -0.2218
+-1.6232 CUSTOMER -0.2218
+-1.6232 EMPLOYEE -0.2218
+-1.6232 MATERIAL -0.2218
+-1.6232 ORDER -0.2218
+-1.6232 PAYMENT -0.2218
+-1.6232 SUPPLIER -0.2218
+
+\2-grams:
+-1.1461 <s> CLTHES 0.0000
+-1.1461 <s> CUSTOMER 0.0000
+-1.1461 <s> EMPLOYEE 0.0000
+-1.1461 <s> MATERIAL 0.0000
+-1.1461 <s> ORDER 0.0000
+-1.1461 <s> PAYMENT 0.0000
+-1.1461 <s> SUPPLIER 0.0000
+-0.3010 CLTHES </s> -0.3010
+-0.3010 CUSTOMER </s> -0.3010
+-0.3010 EMPLOYEE </s> -0.3010
+-0.3010 MATERIAL </s> -0.3010
+-0.3010 ORDER </s> -0.3010
+-0.3010 PAYMENT </s> -0.3010
+-0.3010 SUPPLIER </s> -0.3010
+
+\3-grams:
+-0.3010 <s> CLTHES </s>
+-0.3010 <s> CUSTOMER </s>
+-0.3010 <s> EMPLOYEE </s>
+-0.3010 <s> MATERIAL </s>
+-0.3010 <s> ORDER </s>
+-0.3010 <s> PAYMENT </s>
+-0.3010 <s> SUPPLIER </s>
+
+\end\

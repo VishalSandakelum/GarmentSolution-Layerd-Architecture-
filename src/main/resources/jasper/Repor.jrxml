@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.1.final using JasperReports Library version 6.20.1-7584acb244139816654f64e2fd57a00d3e31921e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Repor" pageWidth="850" pageHeight="842" columnWidth="810" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b6d0a5d6-8618-4503-8e9b-5aae785a7d07">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<queryString language="SQL">
+		<![CDATA[select *from incomedetails]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="incomedetails"/>
+	</field>
+	<field name="month" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="month"/>
+		<property name="com.jaspersoft.studio.field.label" value="month"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="incomedetails"/>
+	</field>
+	<field name="empaymentotal" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="empaymentotal"/>
+		<property name="com.jaspersoft.studio.field.label" value="empaymentotal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="incomedetails"/>
+	</field>
+	<field name="cuspaymentotal" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="cuspaymentotal"/>
+		<property name="com.jaspersoft.studio.field.label" value="cuspaymentotal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="incomedetails"/>
+	</field>
+	<field name="proflose" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="proflose"/>
+		<property name="com.jaspersoft.studio.field.label" value="proflose"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="incomedetails"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="129" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="10" width="810" height="66" forecolor="#040405" backcolor="#0437D1" uuid="fb9d0e20-1ff4-48d0-9c9b-433a17de57ed"/>
+				<graphicElement>
+					<pen lineWidth="7.0" lineStyle="Double"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="250" y="20" width="310" height="50" uuid="cb7902e4-40e0-4cb0-afa8-85a165f6bb52"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial&#xD;&#xA;&#xD;&#xA;SansSerif&#xD;&#xA;SansSerif&#xD;&#xA;&#xD;&#xA;SansSerif" size="30"/>
+				</textElement>
+				<text><![CDATA[FASHION FLOW]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="87" splitType="Stretch">
+			<rectangle>
+				<reportElement x="170" y="0" width="470" height="50" backcolor="#8A8A8A" uuid="014d3d58-a495-4058-a141-0f9e82a17e0d"/>
+				<graphicElement>
+					<pen lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="280" y="3" width="260" height="37" uuid="15fe1541-8607-409e-ab53-e8f73ac491f6"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial&#xD;&#xA;" size="25"/>
+				</textElement>
+				<text><![CDATA[Monthly Report]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="29" y="0" width="110" height="30" uuid="235478a1-a5d8-42f5-9e69-1b2a15d5ae98">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9f731bd0-b24d-4ceb-bb32-9056f6e02b71"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial&#xD;&#xA;" size="20"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="101" y="1" width="89" height="30" uuid="16658ca0-9871-480a-986a-2978f8c86663">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1c0337a2-fc37-49f0-b8d9-d71748ae1abf"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial&#xD;&#xA;&#xD;&#xA;SansSerif" size="20"/>
+				</textElement>
+				<text><![CDATA[Month]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="211" y="1" width="180" height="30" uuid="81db9f45-e9dd-4a81-ab77-081239f87651">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="43c5ddaa-6c4e-48f3-9c0b-ac1bea3e9e9c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial&#xD;&#xA;" size="20"/>
+				</textElement>
+				<text><![CDATA[Employeepayment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="451" y="1" width="180" height="30" uuid="cf1bacb7-12b4-4c49-a5c5-106956053379">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a6158a33-c903-4df8-812f-8c4b5060863d"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial&#xD;&#xA;" size="20"/>
+				</textElement>
+				<text><![CDATA[Customerpayment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="690" y="1" width="100" height="30" uuid="fc3c4ead-b9cb-40b2-bb92-f99e77445204">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="da790f8e-f904-49cb-87c6-07fb5b619b1d"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial&#xD;&#xA;" size="20"/>
+				</textElement>
+				<text><![CDATA[Profit]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="28" y="10" width="100" height="30" uuid="95529c7f-78c0-46a4-8e59-01f61b60be98">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9f731bd0-b24d-4ceb-bb32-9056f6e02b71"/>
+				</reportElement>
+				<textElement markup="html">
+					<font fontName="Arial&#xD;&#xA;" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="11" width="79" height="30" uuid="0054d8d7-0c9f-4b8a-aa9b-c48cef7986a1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1c0337a2-fc37-49f0-b8d9-d71748ae1abf"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial&#xD;&#xA;" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{month}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="10" width="100" height="30" uuid="d3c7c289-3f5f-4af7-acd7-3fd438b67b80">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="43c5ddaa-6c4e-48f3-9c0b-ac1bea3e9e9c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial&#xD;&#xA;" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{empaymentotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="10" width="100" height="30" uuid="d14e03c0-95cd-44a6-9b8a-331288325a7a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a6158a33-c903-4df8-812f-8c4b5060863d"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial&#xD;&#xA;" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuspaymentotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="689" y="10" width="100" height="30" uuid="0ca3ae8a-249a-4966-9696-f74527c5b480">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="da790f8e-f904-49cb-87c6-07fb5b619b1d"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial&#xD;&#xA;" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{proflose}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

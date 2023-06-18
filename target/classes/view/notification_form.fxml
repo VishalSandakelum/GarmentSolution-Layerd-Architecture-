@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="655.0" prefWidth="1163.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.garment.controller.NotificationFormController">
+   <children>
+      <TableView fx:id="tableview" layoutX="25.0" layoutY="160.0" onMouseClicked="#tableviewmouseclickaction" prefHeight="464.0" prefWidth="1111.0" style="-fx-background-radius: 15px;" styleClass="table" stylesheets="@../assests/css/Colorgradient.css">
+         <columns>
+            <TableColumn fx:id="usernametxt" prefWidth="184.7999725341797" style="-fx-background-radius: 10px;" styleClass="table" text="Username" />
+            <TableColumn fx:id="addresstxt" prefWidth="184.7999725341797" style="-fx-background-radius: 10px;" styleClass="table" text="Address" />
+            <TableColumn fx:id="nictxt" prefWidth="184.7999725341797" style="-fx-background-radius: 10px;" styleClass="table" text="Nic Number" />
+            <TableColumn fx:id="contacttxt" prefWidth="184.7999725341797" style="-fx-background-radius: 10px;" styleClass="table" text="Contact Number" />
+            <TableColumn fx:id="banknumbertxt" prefWidth="184.7999725341797" style="-fx-background-radius: 10px;" styleClass="table" text="Bank Number" />
+            <TableColumn fx:id="gmailtxt" prefWidth="184.7999725341797" style="-fx-background-radius: 10px;" styleClass="table" text="Gmail" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="57.0" fitWidth="60.0" layoutX="440.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/imgs/notificationnewone.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="524.0" layoutY="54.0" prefHeight="34.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 15px;" styleClass="fontcolor" stylesheets="@../assests/css/Colorgradient.css">
+         <children>
+            <Text fill="#b21cd4" layoutX="59.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="fontcolor" text="Notification">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

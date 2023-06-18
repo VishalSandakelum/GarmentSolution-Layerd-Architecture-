@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="540.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.garment.controller.UpdateFormController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="512.0" prefWidth="575.0" style="-fx-border-radius: 20px; -fx-background-color: transparent;" styleClass="updatepane" stylesheets="@../assests/css/Colorgradient.css">
+         <children>
+            <ImageView fitHeight="64.0" fitWidth="89.0" layoutX="243.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/imgs/employees.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="184.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Update From">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="55.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="55.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id :">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="55.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nic :">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="55.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gmail :">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="55.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact number :">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="55.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bank number :">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="55.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="updatenametxt" layoutX="199.0" layoutY="123.0" prefHeight="25.0" prefWidth="318.0" promptText="name" styleClass="focuscolor" stylesheets="@../assests/css/Colorgradient.css">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="updateidtxt" layoutX="199.0" layoutY="168.0" prefHeight="25.0" prefWidth="318.0" promptText="id" styleClass="focuscolor" stylesheets="@../assests/css/Colorgradient.css">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="updategmailtxt" layoutX="199.0" layoutY="258.0" prefHeight="25.0" prefWidth="318.0" promptText="gmail(@gmail.com)" styleClass="focuscolor" stylesheets="@../assests/css/Colorgradient.css">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="updatenictxt" layoutX="199.0" layoutY="213.0" prefHeight="25.0" prefWidth="318.0" promptText="nic number" styleClass="focuscolor" stylesheets="@../assests/css/Colorgradient.css">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="updateconumbertxt" layoutX="199.0" layoutY="303.0" prefHeight="25.0" prefWidth="318.0" promptText="contact number" styleClass="focuscolor" stylesheets="@../assests/css/Colorgradient.css">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="updatebanumbertxt" layoutX="199.0" layoutY="348.0" prefHeight="25.0" prefWidth="318.0" promptText="bank number" styleClass="focuscolor" stylesheets="@../assests/css/Colorgradient.css">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="updateaddresstxt" layoutX="199.0" layoutY="393.0" prefHeight="25.0" prefWidth="318.0" promptText="address" styleClass="focuscolor" stylesheets="@../assests/css/Colorgradient.css">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="updatebtn" layoutX="332.0" layoutY="463.0" onAction="#updatebtnonaction" prefHeight="31.0" prefWidth="95.0" style="-fx-border-radius: 20px; -fx-background-radius: 20px;" stylesheets="@../assests/css/Colorgradient.css" text="UPDATE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="panenew" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="deletebtn" layoutX="447.0" layoutY="463.0" onAction="#deletebtnonaction" prefHeight="31.0" prefWidth="95.0" style="-fx-border-radius: 20px; -fx-background-radius: 20px;" stylesheets="@../assests/css/Colorgradient.css" text="DELETE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="panenew" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

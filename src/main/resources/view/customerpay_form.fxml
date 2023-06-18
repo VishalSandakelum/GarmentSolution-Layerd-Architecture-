@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="694.0" prefWidth="1497.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.garment.controller.CustomerpayFormController">
+   <children>
+      <TableView layoutX="140.0" layoutY="193.0" prefHeight="455.0" prefWidth="1287.0">
+         <columns>
+            <TableColumn prefWidth="220.80003356933594" text="Customer Id" />
+            <TableColumn prefWidth="204.00003051757812" text="Date" />
+            <TableColumn prefWidth="222.4000244140625" text="Payment Id" />
+            <TableColumn prefWidth="215.199951171875" text="Pay" />
+            <TableColumn prefWidth="209.60009765625" text="Order Id" />
+            <TableColumn prefWidth="209.60009765625" text="Amount" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="57.0" fitWidth="60.0" layoutX="488.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/imgs/incomedetailnewone.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="572.0" layoutY="46.0" prefHeight="34.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 15px;" styleClass="fontcolor" stylesheets="@../assests/css/Colorgradient.css">
+         <children>
+            <Text fill="#b21cd4" layoutX="48.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="fontcolor" text="Manage Pay">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <ImageView fitHeight="103.0" fitWidth="107.0" layoutX="28.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/imgs/cardpaymentnewone.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

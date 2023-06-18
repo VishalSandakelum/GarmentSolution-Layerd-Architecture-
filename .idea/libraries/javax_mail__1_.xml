@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javax.mail (1)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/java/lk/ijse/garment/lib/javax.mail (1).jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

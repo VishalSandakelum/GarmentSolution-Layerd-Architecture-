@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="618.0" prefWidth="1365.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.garment.controller.FirstpageFormController">
+   <children>
+      <Text layoutX="157.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Summary">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="1198.0" layoutY="429.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="84.0" style="-fx-background-radius: 10px;" styleClass="background" stylesheets="@../assests/css/Colorgradient.css" text="Settings" textFill="#ececec">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Line endX="-36.2000732421875" endY="269.0" layoutX="1161.0" layoutY="299.0" opacity="0.63" startX="-36.2000732421875" startY="16.20001220703125" />
+      <Text fill="#0011d1" layoutX="931.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GENARTE REPORT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <AreaChart fx:id="areachart" layoutX="436.0" layoutY="319.0" prefHeight="262.0" prefWidth="591.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </AreaChart>
+      <Pane layoutX="119.0" layoutY="327.0" opacity="0.85" prefHeight="210.0" prefWidth="225.0" style="-fx-border-color: black; -fx-border-radius: 20px;">
+         <children>
+            <Line endX="86.20001220703125" layoutX="118.0" layoutY="105.0" opacity="0.85" startX="-101.00001525878906" />
+            <Text fill="#0bcf2c" layoutX="17.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income" wrappingWidth="77.9296875">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#cf2e0c" layoutX="14.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expense" wrappingWidth="66.62500000000011">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="incometxt" layoutX="17.0" layoutY="92.0" opacity="0.68" strokeType="OUTSIDE" strokeWidth="0.0" text="R.S. 500 000" wrappingWidth="112.32972717285156">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="17.0" layoutY="191.0" opacity="0.68" strokeType="OUTSIDE" strokeWidth="0.0" text="R.S. 000 000" wrappingWidth="112.32972717285156">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+         </children></Pane>
+      <VBox prefHeight="618.0" prefWidth="60.0" style="-fx-background-color: white;" styleClass="pane1" stylesheets="@../assests/css/Colorgradient.css">
+         <children>
+            <Label prefHeight="33.0" prefWidth="107.0" />
+            <Button fx:id="menu" mnemonicParsing="false" onAction="#menubtnonAction" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: transparent; -fx-background-radius: 50px;" styleClass="menu" stylesheets="@../assests/css/Colorgradient.css">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/imgs/menunew1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="143.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+            <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="50.0" style="-fx-background-color: transparent;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/imgs/homenewone.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="39.0" fitWidth="60.0" layoutX="10.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="micbtn" layoutX="10.0" layoutY="221.0" mnemonicParsing="false" onAction="#micbtnonaction" prefHeight="36.0" prefWidth="50.0" style="-fx-background-color: transparent;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/imgs/micnewone.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="39.0" fitWidth="60.0" layoutX="10.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="notificationbtn" layoutX="10.0" layoutY="300.0" mnemonicParsing="false" onAction="#notificationbtnonaction" prefHeight="36.0" prefWidth="50.0" style="-fx-background-color: transparent;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 0;">
+                     <image>
+                        <Image url="@../assests/imgs/notificationnewone.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="39.0" fitWidth="60.0" layoutX="10.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="10.0" layoutY="380.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="50.0" style="-fx-background-color: transparent;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 0;">
+                     <image>
+                        <Image url="@../assests/imgs/settingsicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Pane layoutX="111.0" layoutY="8.0" prefHeight="210.0" prefWidth="1206.0" style="-fx-background-color: white; -fx-border-radius: 20px;" styleClass="mainpane" stylesheets="@../assests/css/Colorgradient.css">
+         <children>
+            <Button fx:id="cotton" layoutX="104.0" layoutY="55.0" mnemonicParsing="false" onAction="#cottonbtnonaction" onMouseEntered="#cottonmouseenter" onMouseExited="#cottonmouseexite" prefHeight="142.0" prefWidth="187.0" style="-fx-background-radius: 10px;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+               <graphic>
+                  <ImageView fx:id="firstimg" fitHeight="133.0" fitWidth="245.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 10px; -fx-background-radius: 10px;">
+                     <image>
+                        <Image url="@../assests/imgs/cottonnewone1.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fill="#7300ff" layoutX="21.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DashBoard">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Line endX="-100.00001525878906" endY="18.400001525878906" layoutX="196.0" layoutY="4.0" startX="-100.0" stroke="#8e8a8a" />
+            <Text fill="#151515" layoutX="104.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello Mate, Welcome Back">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Pane fx:id="chooselist" layoutX="-63.0" layoutY="32.0" opacity="0.98" prefHeight="562.0" prefWidth="204.0" style="-fx-background-color: white;" styleClass="mainpane" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+               <children>
+                  <Button fx:id="backbtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnbackbtnonacction" prefHeight="34.0" prefWidth="38.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/imgs/previousnewone1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <VBox layoutX="20.0" layoutY="63.0" prefHeight="446.0" prefWidth="164.0">
+                     <children>
+                        <Button fx:id="managesupplierbtn" mnemonicParsing="false" onAction="#managesupplierbtnonaction" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Manage Supplier" textFill="#861ee1">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assests/imgs/supplier.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="fontcolor" />
+                              <String fx:value="panenew" />
+                           </styleClass></Button>
+                        <Pane prefHeight="33.0" prefWidth="154.0" />
+                        <Button fx:id="manageemployeebtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#manageemployeebtnonaction" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Manage Employee" textFill="#861ee1">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assests/imgs/employees.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="fontcolor" />
+                              <String fx:value="panenew" />
+                           </styleClass>
+                        </Button>
+                        <Pane layoutX="10.0" layoutY="44.0" prefHeight="33.0" prefWidth="154.0" />
+                        <Button fx:id="managematerialbtn" layoutX="10.0" layoutY="78.0" mnemonicParsing="false" onAction="#managematerialbtnbtnonaction" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Manage Material" textFill="#861ee1">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assests/imgs/materialnewone.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="fontcolor" />
+                              <String fx:value="panenew" />
+                           </styleClass>
+                        </Button>
+                        <Pane layoutX="10.0" layoutY="112.0" prefHeight="33.0" prefWidth="154.0" />
+                        <Button fx:id="manageclothesbtn" layoutX="10.0" layoutY="146.0" mnemonicParsing="false" onAction="#manageclothesbtnonaction" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Manage Clothes" textFill="#861ee1">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assests/imgs/clothesnewone.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="fontcolor" />
+                              <String fx:value="panenew" />
+                           </styleClass>
+                        </Button>
+                        <Pane layoutX="10.0" layoutY="180.0" prefHeight="33.0" prefWidth="154.0" />
+                        <Button fx:id="manageorderbtn" layoutX="10.0" layoutY="214.0" mnemonicParsing="false" onAction="#manageorderbtnonaction" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="  Manage Order" textFill="#861ee1">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assests/imgs/order.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="fontcolor" />
+                              <String fx:value="panenew" />
+                           </styleClass>
+                        </Button>
+                        <Pane layoutX="10.0" layoutY="248.0" prefHeight="33.0" prefWidth="154.0" />
+                        <Button fx:id="managecustomerbtn" layoutX="10.0" layoutY="282.0" mnemonicParsing="false" onAction="#managecustomerbtnonaction" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Manage Customer" textFill="#861ee1">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assests/imgs/Customerneqone.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="fontcolor" />
+                              <String fx:value="panenew" />
+                           </styleClass>
+                        </Button>
+                        <Pane layoutX="10.0" layoutY="316.0" prefHeight="33.0" prefWidth="154.0" />
+                        <Button fx:id="managepaybtn" layoutX="10.0" layoutY="350.0" mnemonicParsing="false" onAction="#managepaybtnonaction" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="  Manage Pay" textFill="#861ee1">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assests/imgs/paynew.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="fontcolor" />
+                              <String fx:value="panenew" />
+                           </styleClass>
+                        </Button>
+                        <Pane layoutX="10.0" layoutY="342.0" prefHeight="33.0" prefWidth="154.0" />
+                        <Button fx:id="incomedetailbtn" layoutX="10.0" layoutY="368.0" mnemonicParsing="false" onAction="#incomedetailsbtnonaction" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Income Details" textFill="#861ee1">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assests/imgs/incomedetailnewone.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="fontcolor" />
+                              <String fx:value="panenew" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="cottonpane" layoutX="319.0" layoutY="13.0" prefHeight="40.0" prefWidth="106.0" styleClass="pane4" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+               <children>
+                  <Text fill="WHITE" layoutX="26.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cotton">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button fx:id="wool1" layoutX="372.0" layoutY="55.0" mnemonicParsing="false" onAction="#woolbtnonaction" onMouseEntered="#woolmouseenter" onMouseExited="#woolmouseexite" prefHeight="142.0" prefWidth="187.0" style="-fx-background-radius: 10px;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+               <graphic>
+                  <ImageView fx:id="firstimg1" fitHeight="131.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 10px; -fx-background-radius: 10px;">
+                     <image>
+                        <Image url="@../assests/imgs/woolnewone1.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Pane fx:id="wollpane" layoutX="606.0" layoutY="13.0" prefHeight="40.0" prefWidth="106.0" styleClass="pane4" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+               <children>
+                  <Text fill="WHITE" layoutX="26.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wool">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button fx:id="polyster" layoutX="659.0" layoutY="55.0" mnemonicParsing="false" onAction="#polysterbtnonaction" onMouseEntered="#poliystermouseenter" onMouseExited="#poliystermouseexite" prefHeight="142.0" prefWidth="187.0" style="-fx-background-radius: 10px;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+               <graphic>
+                  <ImageView fx:id="firstimg11" fitHeight="121.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 10px; -fx-background-radius: 10px;">
+                     <image>
+                        <Image url="@../assests/imgs/polysternewone1.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Pane fx:id="polysterpane" layoutX="911.0" layoutY="14.0" prefHeight="40.0" prefWidth="106.0" styleClass="pane4" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+               <children>
+                  <Text fill="WHITE" layoutX="26.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Polyster">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Line endX="49.5999755859375" endY="95.79998779296875" layoutX="989.0" layoutY="93.0" opacity="0.65" startX="49.5999755859375" startY="-67.4000015258789" />
+            <Button fx:id="seemorepanebtn" layoutX="972.0" layoutY="105.0" mnemonicParsing="false" onAction="#btnseemorepanebtnonaction" style="-fx-background-color: tranparent;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+                     <image>
+                        <Image url="@../assests/imgs/previousnewone1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Pane layoutX="1051.0" layoutY="10.0" prefHeight="23.0" prefWidth="141.0" styleClass="pane5" stylesheets="@../assests/css/Colorgradient.css">
+               <children>
+                  <Text fx:id="datetimetxt" fill="WHITE" layoutX="6.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01/04/2023   12.45P.M">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text fill="#810aff" layoutX="1074.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LAST MONTH">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="17.0" fitWidth="21.0" layoutX="1159.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 90;">
+               <image>
+                  <Image url="@../assests/imgs/playarrow.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="1084.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="1084.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expenses">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Circle fill="#1f93ff00" layoutX="1106.0" layoutY="116.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Button layoutX="1088.0" layoutY="96.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="35.0" style="-fx-background-color: trans; -fx-border-radius: 50px;">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: -90;">
+                     <image>
+                        <Image url="@../assests/imgs/playarrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Circle fill="#1f93ff00" layoutX="1107.0" layoutY="179.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Button layoutX="1089.0" layoutY="166.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="35.0" style="-fx-background-color: transparent; -fx-border-radius: 50px;">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: -90;">
+                     <image>
+                        <Image url="@../assests/imgs/rewindbutton1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Pane fx:id="seepanenew" layoutX="21.0" layoutY="97.0" prefHeight="426.0" prefWidth="1223.0" style="-fx-background-color: white; -fx-border-radius: 20px;" styleClass="mainpane" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+               <children>
+                  <Button fx:id="cotton1new" layoutX="32.0" layoutY="56.0" mnemonicParsing="false" onMouseEntered="#cotton1newmouseenter" onMouseExited="#cotton1newmouseexite" prefHeight="142.0" prefWidth="187.0" style="-fx-background-radius: 10px;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+                     <graphic>
+                        <ImageView fx:id="firstimg12" fitHeight="133.0" fitWidth="245.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 10px; -fx-background-radius: 10px;">
+                           <image>
+                              <Image url="@../assests/imgs/cottonnewone1.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Pane fx:id="cottonpane1new" layoutX="247.0" layoutY="14.0" prefHeight="40.0" prefWidth="106.0" styleClass="pane4" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+                     <children>
+                        <Text fill="WHITE" layoutX="26.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cotton">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Button fx:id="wool11new" layoutX="300.0" layoutY="56.0" mnemonicParsing="false" onMouseEntered="#wool11newmouseenter" onMouseExited="#wool11newmouseexite" prefHeight="142.0" prefWidth="187.0" style="-fx-background-radius: 10px;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+                     <graphic>
+                        <ImageView fx:id="firstimg13" fitHeight="131.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 10px; -fx-background-radius: 10px;">
+                           <image>
+                              <Image url="@../assests/imgs/woolnewone1.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Pane fx:id="wollpane1new" layoutX="534.0" layoutY="14.0" prefHeight="40.0" prefWidth="106.0" styleClass="pane4" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+                     <children>
+                        <Text fill="WHITE" layoutX="26.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wool">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Button fx:id="polyster1new" layoutX="587.0" layoutY="56.0" mnemonicParsing="false" onMouseEntered="#polyster1newmouseenter" onMouseExited="#polyster1newmouseexite" prefHeight="142.0" prefWidth="187.0" style="-fx-background-radius: 10px;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+                     <graphic>
+                        <ImageView fx:id="firstimg111" fitHeight="121.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 10px; -fx-background-radius: 10px;">
+                           <image>
+                              <Image url="@../assests/imgs/polysternewone1.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Pane fx:id="polysterpane1new" layoutX="839.0" layoutY="15.0" prefHeight="40.0" prefWidth="106.0" styleClass="pane4" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+                     <children>
+                        <Text fill="WHITE" layoutX="26.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Polyster">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Button fx:id="nylonbtn" layoutX="32.0" layoutY="271.0" mnemonicParsing="false" onMouseEntered="#nylonmouseenter" onMouseExited="#nylonmouseexite" prefHeight="142.0" prefWidth="187.0" style="-fx-background-radius: 10px;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+                     <graphic>
+                        <ImageView fx:id="firstimg121" fitHeight="118.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 10px; -fx-background-radius: 10px;">
+                           <image>
+                              <Image url="@../assests/imgs/nylonnewone.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Pane fx:id="nylonpane" layoutX="247.0" layoutY="229.0" prefHeight="40.0" prefWidth="106.0" styleClass="pane4" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+                     <children>
+                        <Text fill="WHITE" layoutX="26.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nylon">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Button fx:id="threadbtn" layoutX="300.0" layoutY="271.0" mnemonicParsing="false" onMouseEntered="#threadnewmouseenter" onMouseExited="#threadnewmouseexite" prefHeight="142.0" prefWidth="234.0" style="-fx-background-radius: 10px;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+                     <graphic>
+                        <ImageView fx:id="firstimg131" fitHeight="133.0" fitWidth="217.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 10px; -fx-background-radius: 10px;">
+                           <image>
+                              <Image url="@../assests/imgs/threadnewone.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Pane fx:id="threadpane" layoutX="534.0" layoutY="229.0" prefHeight="40.0" prefWidth="106.0" styleClass="pane4" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+                     <children>
+                        <Text fill="WHITE" layoutX="26.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thread">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Button fx:id="needlesbtn" layoutX="587.0" layoutY="271.0" mnemonicParsing="false" onMouseEntered="#needlesmouseenter" onMouseExited="#needlesmouseexite" prefHeight="142.0" prefWidth="187.0" style="-fx-background-radius: 10px;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+                     <graphic>
+                        <ImageView fitHeight="102.0" fitWidth="227.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 10px; -fx-background-radius: 10px;">
+                           <image>
+                              <Image url="@../assests/imgs/needlesnewne.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Pane fx:id="needlespane" layoutX="839.0" layoutY="230.0" prefHeight="40.0" prefWidth="106.0" styleClass="pane4" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+                     <children>
+                        <Text fill="WHITE" layoutX="26.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Needles">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Button fx:id="leatherbtn" layoutX="892.0" layoutY="56.0" mnemonicParsing="false" onMouseEntered="#leathermouseenter" onMouseExited="#leathermouseexite" prefHeight="142.0" prefWidth="187.0" style="-fx-background-radius: 10px;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+                     <graphic>
+                        <ImageView fx:id="firstimg11111" fitHeight="132.0" fitWidth="263.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 10px; -fx-background-radius: 10px;">
+                           <image>
+                              <Image url="@../assests/imgs/leathernewone.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Pane fx:id="leather" layoutX="1111.0" layoutY="15.0" prefHeight="40.0" prefWidth="106.0" styleClass="pane4" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+                     <children>
+                        <Text fill="WHITE" layoutX="26.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leather">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Line endX="49.5999755859375" endY="108.19998168945312" layoutX="971.0" layoutY="297.0" opacity="0.65" startX="49.5999755859375" startY="-83.79999542236328" />
+                  <Button fx:id="backpanebtnnew" layoutX="954.0" layoutY="309.0" mnemonicParsing="false" onAction="#btnbackpanebtnonaction" style="-fx-background-color: tranparent;">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 0;">
+                           <image>
+                              <Image url="@../assests/imgs/previousnewone1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="cottondetailpane" layoutX="330.0" layoutY="139.0" prefHeight="156.0" prefWidth="215.0" style="-fx-background-color: white;" styleClass="detailspane" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+         <children>
+            <Text layoutX="27.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id :">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="27.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="quantity :">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="27.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price :">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="idtxt" layoutX="61.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.44085693359375">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="quantitytxt" layoutX="108.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.44085693359375">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="pricetxt" layoutX="83.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.44085693359375">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="wooldetailspane" layoutX="615.0" layoutY="143.0" prefHeight="156.0" prefWidth="215.0" style="-fx-background-color: white;" styleClass="detailspane" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+         <children>
+            <Text layoutX="27.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id :">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="27.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="quantity :">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="n" layoutX="27.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price :">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="woolid" layoutX="61.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.44085693359375">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="woolquantity" layoutX="108.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.44085693359375">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="woolprice" layoutX="83.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.44085693359375">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="polysterdetailspane" layoutX="898.0" layoutY="143.0" prefHeight="156.0" prefWidth="215.0" style="-fx-background-color: white;" styleClass="detailspane" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+         <children>
+            <Text layoutX="27.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id :">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="27.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="quantity :">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="n1" layoutX="27.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price :">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="polysterrid" layoutX="61.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.44085693359375">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="polysterquantity" layoutX="108.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.44085693359375">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="polysterprice" layoutX="83.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="99.44085693359375">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

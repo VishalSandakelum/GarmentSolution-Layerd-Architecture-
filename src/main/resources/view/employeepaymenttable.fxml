@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="683.0" prefWidth="1524.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.garment.controller.EmployeepaymenttableController">
+   <children>
+      <TableView fx:id="tableview" layoutX="22.0" layoutY="185.0" onMouseClicked="#tableviewmouseclickaction" prefHeight="464.0" prefWidth="1480.0" style="-fx-background-radius: 15px;" styleClass="table" stylesheets="@../assests/css/Colorgradient.css">
+         <columns>
+            <TableColumn fx:id="suppliername" prefWidth="184.7999725341797" style="-fx-background-radius: 10px;" styleClass="table" text="Employee Name" />
+            <TableColumn fx:id="nicnumber" prefWidth="184.7999725341797" style="-fx-background-radius: 10px;" styleClass="table" text="Nic Number" />
+            <TableColumn fx:id="gmail" prefWidth="184.7999725341797" style="-fx-background-radius: 10px;" styleClass="table" text="Gmail" />
+            <TableColumn fx:id="mobilenumber" prefWidth="184.7999725341797" style="-fx-background-radius: 10px;" styleClass="table" text="Mobile Number" />
+            <TableColumn fx:id="Address" prefWidth="184.7999725341797" style="-fx-background-radius: 10px;" styleClass="table" text="Address" />
+            <TableColumn fx:id="id" prefWidth="184.7999725341797" style="-fx-background-radius: 10px;" styleClass="table" text="Id" />
+            <TableColumn fx:id="Banknumber" prefWidth="184.7999725341797" style="-fx-background-radius: 10px;" styleClass="table" text="Bank Number" />
+            <TableColumn fx:id="Delete" prefWidth="184.7999725341797" style="-fx-background-radius: 10px;" styleClass="table" text="Date" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="57.0" fitWidth="60.0" layoutX="596.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/imgs/employees.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="680.0" layoutY="36.0" prefHeight="34.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 15px;" styleClass="fontcolor" stylesheets="@../assests/css/Colorgradient.css">
+         <children>
+            <Text fill="#b21cd4" layoutX="40.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="fontcolor" text="Manage Employee">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

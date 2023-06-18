@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="728.0" prefWidth="1365.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.garment.controller.ManagesupplierFormController">
+   <children>
+      <ImageView fitHeight="309.0" fitWidth="215.0" layoutX="100.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/imgs/suppliersnew.png" />
+         </image>
+      </ImageView>
+      <Line endX="-143.39996337890625" endY="399.0" layoutX="987.0" layoutY="213.0" opacity="0.65" startX="-143.39996337890625" startY="-35.399993896484375" visible="false" />
+      <TextField fx:id="searchtxt" layoutX="522.0" layoutY="91.0" prefHeight="33.0" prefWidth="370.0" promptText="               Searching Here" style="-fx-background-radius: 20px; -fx-border-color: black; -fx-border-radius: 20; -fx-background-color: transparent;" styleClass="panenew" stylesheets="@../assests/css/Colorgradient.css">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </TextField>
+      <Pane layoutX="892.0" layoutY="177.0" prefHeight="411.0" prefWidth="442.0" style="-fx-background-color: tranparent; -fx-border-radius: 20px;" styleClass="mainpane" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+         <children>
+            <Button fx:id="cotton" layoutX="21.0" layoutY="76.0" mnemonicParsing="false" onMouseEntered="#cottonmouseenter" onMouseExited="#cottonmouseexite" prefHeight="142.0" prefWidth="187.0" style="-fx-background-radius: 10px;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+               <graphic>
+                  <ImageView fx:id="firstimg" fitHeight="133.0" fitWidth="245.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 10px; -fx-background-radius: 10px;">
+                     <image>
+                        <Image url="@../assests/imgs/cottonnewone1.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Pane fx:id="cottonpane" layoutX="236.0" layoutY="35.0" prefHeight="40.0" prefWidth="106.0" styleClass="pane4" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+               <children>
+                  <Text fill="WHITE" layoutX="26.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cotton">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button fx:id="wool1" layoutX="21.0" layoutY="250.0" mnemonicParsing="false" onMouseEntered="#woolmouseenter" onMouseExited="#woolmouseexite" prefHeight="142.0" prefWidth="187.0" style="-fx-background-radius: 10px;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+               <graphic>
+                  <ImageView fx:id="firstimg1" fitHeight="131.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 10px; -fx-background-radius: 10px;">
+                     <image>
+                        <Image url="@../assests/imgs/woolnewone1.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Pane fx:id="wollpane" layoutX="255.0" layoutY="208.0" prefHeight="40.0" prefWidth="106.0" styleClass="pane4" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+               <children>
+                  <Text fill="WHITE" layoutX="26.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wool">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button fx:id="seemorepanebtn" layoutX="289.0" layoutY="305.0" mnemonicParsing="false" onAction="#btnseemorepanebtnonaction" style="-fx-background-color: tranparent;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+                     <image>
+                        <Image url="@../assests/imgs/previousnewone1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <VBox prefHeight="731.0" prefWidth="60.0" style="-fx-background-color: white;" styleClass="pane1" stylesheets="@../assests/css/Colorgradient.css">
+         <children>
+            <Label prefHeight="33.0" prefWidth="107.0" />
+            <Button fx:id="menu" mnemonicParsing="false" onAction="#menubtnonAction" prefHeight="34.0" prefWidth="49.0" style="-fx-background-color: transparent; -fx-background-radius: 50px;" styleClass="menu" stylesheets="@../assests/css/Colorgradient.css">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/imgs/menunew1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="143.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="homebtn" mnemonicParsing="false" onAction="#homebtnonaction" prefHeight="36.0" prefWidth="50.0" style="-fx-background-color: transparent;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/imgs/homenewone.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="39.0" fitWidth="60.0" layoutX="10.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="10.0" layoutY="221.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="50.0" style="-fx-background-color: transparent;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/imgs/micnewone.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="39.0" fitWidth="60.0" layoutX="10.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="10.0" layoutY="300.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="50.0" style="-fx-background-color: transparent;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 0;">
+                     <image>
+                        <Image url="@../assests/imgs/notificationnewone.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="39.0" fitWidth="60.0" layoutX="10.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="10.0" layoutY="380.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="50.0" style="-fx-background-color: transparent;" styleClass="second" stylesheets="@../assests/css/Colorgradient.css">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 0;">
+                     <image>
+                        <Image url="@../assests/imgs/settingsicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="57.0" fitWidth="60.0" layoutX="541.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/imgs/supplier.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="625.0" layoutY="35.0" prefHeight="34.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 15px;" styleClass="fontcolor" stylesheets="@../assests/css/Colorgradient.css">
+         <children>
+            <Text fill="#b21cd4" layoutX="40.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="fontcolor" text="Manage Supplier">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children></Pane>
+      <Pane layoutX="358.0" layoutY="151.0" opacity="0.8" prefHeight="543.0" prefWidth="698.0" style="-fx-border-color: black; -fx-border-radius: 20px; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css">
+         <children>
+            <Text layoutX="252.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Supplier">
+               <font>
+                  <Font name="System Italic" size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="82.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name :" wrappingWidth="126.37916564941406">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="82.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nic Number :" wrappingWidth="126.37916564941406">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="76.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gmail :" wrappingWidth="126.37916564941406">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="76.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number :" wrappingWidth="181.65283203125">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="76.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :" wrappingWidth="181.65283203125">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="76.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bank number :" wrappingWidth="181.65283203125">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="nametxt" layoutX="287.0" layoutY="104.0" prefHeight="25.0" prefWidth="259.0" promptText="Full Name" styleClass="focuscolor" stylesheets="@../assests/css/Colorgradient.css">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="nictext" layoutX="287.0" layoutY="156.0" prefHeight="25.0" prefWidth="259.0" promptText="Nic Number" styleClass="focuscolor" stylesheets="@../assests/css/Colorgradient.css">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="gmailtext" layoutX="287.0" layoutY="208.0" prefHeight="24.0" prefWidth="318.0" promptText="Gmail" styleClass="focuscolor" stylesheets="@../assests/css/Colorgradient.css">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="monumbertext" layoutX="287.0" layoutY="267.0" prefHeight="25.0" prefWidth="259.0" promptText="Mobile Number" styleClass="focuscolor" stylesheets="@../assests/css/Colorgradient.css">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="addresstxt" layoutX="287.0" layoutY="326.0" prefHeight="20.0" prefWidth="318.0" promptText="Address" styleClass="focuscolor" stylesheets="@../assests/css/Colorgradient.css">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="banknumbtxt" layoutX="287.0" layoutY="385.0" prefHeight="25.0" prefWidth="259.0" promptText="Bank Number" styleClass="focuscolor" stylesheets="@../assests/css/Colorgradient.css">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXTextField>
+            <Text layoutX="76.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id :" wrappingWidth="181.65283203125">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="idtext" layoutX="287.0" layoutY="456.0" prefHeight="25.0" prefWidth="259.0" promptText="Id" styleClass="focuscolor" stylesheets="@../assests/css/Colorgradient.css">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </Pane>
+      <Button fx:id="checkbtn" layoutX="1113.0" layoutY="654.0" mnemonicParsing="false" onAction="#checkbtnonaction" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Check Supplier" textFill="#861ee1">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <styleClass>
+            <String fx:value="fontcolor" />
+            <String fx:value="panenew" />
+         </styleClass>
+      </Button>
+      <Pane fx:id="chooselist" layoutX="53.0" layoutY="41.0" opacity="0.98" prefHeight="562.0" prefWidth="204.0" style="-fx-background-color: white;" styleClass="mainpane" stylesheets="@../assests/css/Colorgradient.css" visible="false">
+         <children>
+            <Button fx:id="backbtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnbackbtnonacction" prefHeight="34.0" prefWidth="38.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/imgs/previousnewone1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <VBox layoutX="20.0" layoutY="63.0" prefHeight="446.0" prefWidth="164.0">
+               <children>
+                  <Button fx:id="managesupplierbtn" mnemonicParsing="false" onAction="#managesupplierbtnonaction" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Manage Supplier" textFill="#861ee1">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/imgs/supplier.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="fontcolor" />
+                        <String fx:value="panenew" />
+                     </styleClass>
+                  </Button>
+                  <Pane prefHeight="33.0" prefWidth="154.0" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Manage Employee" textFill="#861ee1">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/imgs/employees.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="fontcolor" />
+                        <String fx:value="panenew" />
+                     </styleClass>
+                  </Button>
+                  <Pane layoutX="10.0" layoutY="44.0" prefHeight="33.0" prefWidth="154.0" />
+                  <Button layoutX="10.0" layoutY="78.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Manage Material" textFill="#861ee1">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/imgs/materialnewone.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="fontcolor" />
+                        <String fx:value="panenew" />
+                     </styleClass>
+                  </Button>
+                  <Pane layoutX="10.0" layoutY="112.0" prefHeight="33.0" prefWidth="154.0" />
+                  <Button layoutX="10.0" layoutY="146.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Manage Clothes" textFill="#861ee1">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/imgs/clothesnewone.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="fontcolor" />
+                        <String fx:value="panenew" />
+                     </styleClass>
+                  </Button>
+                  <Pane layoutX="10.0" layoutY="180.0" prefHeight="33.0" prefWidth="154.0" />
+                  <Button layoutX="10.0" layoutY="214.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="  Manage Order" textFill="#861ee1">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/imgs/order.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="fontcolor" />
+                        <String fx:value="panenew" />
+                     </styleClass>
+                  </Button>
+                  <Pane layoutX="10.0" layoutY="248.0" prefHeight="33.0" prefWidth="154.0" />
+                  <Button layoutX="10.0" layoutY="282.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Manage Customer" textFill="#861ee1">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/imgs/Customerneqone.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="fontcolor" />
+                        <String fx:value="panenew" />
+                     </styleClass>
+                  </Button>
+                  <Pane layoutX="10.0" layoutY="316.0" prefHeight="33.0" prefWidth="154.0" />
+                  <Button layoutX="10.0" layoutY="350.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="  Manage Pay" textFill="#861ee1">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/imgs/paynew.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="fontcolor" />
+                        <String fx:value="panenew" />
+                     </styleClass>
+                  </Button>
+                  <Pane layoutX="10.0" layoutY="342.0" prefHeight="33.0" prefWidth="154.0" />
+                  <Button layoutX="10.0" layoutY="368.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Income Details" textFill="#861ee1">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/imgs/incomedetailnewone.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="fontcolor" />
+                        <String fx:value="panenew" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Button fx:id="savesupplierbtn" layoutX="1113.0" layoutY="612.0" mnemonicParsing="false" onAction="#savesupplierbtnonaction" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Add Supplier" textFill="#861ee1">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <styleClass>
+            <String fx:value="fontcolor" />
+            <String fx:value="panenew" />
+         </styleClass>
+      </Button>
+      <Button fx:id="searchbtn" layoutX="843.0" layoutY="92.0" mnemonicParsing="false" onAction="#searchbtnonaction" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/imgs/searchs.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="deletesupplierbtn" layoutX="1113.0" layoutY="572.0" mnemonicParsing="false" onAction="#deletesupplierbtnonaction" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Delete Supplier" textFill="#861ee1">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <styleClass>
+            <String fx:value="fontcolor" />
+            <String fx:value="panenew" />
+         </styleClass>
+      </Button>
+      <Button fx:id="updatesupplier" layoutX="1113.0" layoutY="533.0" mnemonicParsing="false" onAction="#updatesupplierbtn" prefHeight="32.0" prefWidth="165.0" style="-fx-border-radius: 20px; -fx-border-color: black; -fx-background-color: transparent;" stylesheets="@../assests/css/Colorgradient.css" text="Update Suppier" textFill="#861ee1">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <styleClass>
+            <String fx:value="fontcolor" />
+            <String fx:value="panenew" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="691.0" prefWidth="1059.0" style="-fx-background-color: WHITE;" styleClass="background" stylesheets="@../assests/css/Colorgradient.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.garment.controller.LoginpageFormController">
+   <children>
+      <Circle fill="#21adff5e" layoutX="161.0" layoutY="351.0" opacity="0.27" radius="69.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="circle" />
+      <Circle fill="#21adff5e" layoutX="304.0" layoutY="243.0" opacity="0.27" radius="21.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="circle" />
+      <Circle fill="#21adff5e" layoutX="405.0" layoutY="558.0" opacity="0.2" radius="48.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="circle" />
+      <Circle fill="#bb21ff5e" layoutX="97.0" layoutY="112.0" opacity="0.47" radius="53.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="circle" />
+      <Circle fill="#bb21ff5e" layoutX="122.0" layoutY="533.0" opacity="0.47" radius="53.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="circle" />
+      <Circle fill="#21adff5e" layoutX="165.0" layoutY="497.0" opacity="0.27" radius="43.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="circle" />
+      <Circle fill="#21adff5e" layoutX="1029.0" layoutY="403.0" opacity="0.27" radius="61.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="circle" />
+      <Circle fill="#21adff5e" layoutX="939.0" layoutY="270.0" opacity="0.27" radius="21.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="circle" />
+      <Circle fill="#21adff5e" layoutX="939.0" layoutY="558.0" opacity="0.2" radius="48.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="circle" />
+      <Circle fill="#bb21ff5e" layoutX="856.0" layoutY="59.0" opacity="0.47" radius="35.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="circle" />
+      <Circle fill="#bb21ff5e" layoutX="978.0" layoutY="138.0" opacity="0.47" radius="53.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="circle" />
+      <Circle fill="#21adff5e" layoutX="1021.0" layoutY="102.0" opacity="0.27" radius="43.0" stroke="TRANSPARENT" strokeType="INSIDE" styleClass="circle" />
+      <Pane layoutX="157.0" layoutY="76.0" prefHeight="540.0" prefWidth="776.0" style="-fx-background-color: #ffff; -fx-background-radius: 30px; -fx-border-color: black; -fx-border-radius: 30px; -fx-border-width: 2;" styleClass="pane" stylesheets="@../assests/css/Colorgradient.css">
+         <children>
+            <Circle fill="WHITE" layoutX="606.0" layoutY="120.0" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fitHeight="312.0" fitWidth="389.0" layoutX="14.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/imgs/vectorgarment.jpg" />
+               </image></ImageView>
+            <Text layoutX="321.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN " wrappingWidth="274.38482666015625">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+            </Text>
+            <TextField fx:id="usernametxt" layoutX="490.0" layoutY="206.0" prefHeight="42.0" prefWidth="248.0" promptText="Username" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="70.0" fitWidth="122.0" layoutX="562.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/imgs/userM.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="loginbtn" layoutX="545.0" layoutY="405.0" mnemonicParsing="false" onAction="#loginbtnonaction" prefHeight="43.0" prefWidth="122.0" style="-fx-background-radius: 40px;" styleClass="background" stylesheets="@../assests/css/Colorgradient.css" text="login" textFill="#f4f4f4">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Line endX="133.00006103515625" layoutX="605.0" layoutY="239.0" startX="-115.0" />
+            <Line endX="133.00006103515625" layoutX="605.0" layoutY="325.0" startX="-115.0" />
+            <PasswordField fx:id="passwordfield" layoutX="490.0" layoutY="292.0" prefHeight="42.0" prefWidth="248.0" promptText="Password" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </PasswordField>
+            <Hyperlink layoutX="641.0" layoutY="346.0" text="Forget Password">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Hyperlink>
+            <Button fx:id="checkpasswordbtn" layoutX="693.0" layoutY="298.0" mnemonicParsing="false" onAction="#btncheckpasswordbtnonaction" prefHeight="25.0" prefWidth="42.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/imgs/eye.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <TextField fx:id="checkpasswordfield" layoutX="490.0" layoutY="292.0" prefHeight="42.0" prefWidth="248.0" style="-fx-background-color: transparent;" visible="false">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </TextField>
+            <Button fx:id="invisiblebtn" layoutX="693.0" layoutY="298.0" mnemonicParsing="false" onAction="#btninvisiblebtnonaction" prefHeight="25.0" prefWidth="42.0" style="-fx-background-color: transparent;" visible="false">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/imgs/invisiblenew.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

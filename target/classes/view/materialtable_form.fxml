@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainpane" onMouseClicked="#mainpanemouseclick" prefHeight="683.0" prefWidth="1277.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.garment.controller.MaterialtableFormController">
+   <children>
+      <ImageView fitHeight="57.0" fitWidth="60.0" layoutX="485.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/imgs/materialnewone.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="569.0" layoutY="36.0" prefHeight="34.0" prefWidth="200.0" style="-fx-border-color: black; -fx-border-radius: 15px;" styleClass="fontcolor" stylesheets="@../assests/css/Colorgradient.css">
+         <children>
+            <Text fill="#b21cd4" layoutX="40.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="fontcolor" text="Manage Material">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <TableView fx:id="tableview" layoutX="93.0" layoutY="176.0" onMouseClicked="#tableviewmouseclickaction" prefHeight="464.0" prefWidth="1094.0" style="-fx-background-radius: 20px;" styleClass="table" stylesheets="@../assests/css/Colorgradient.css">
+        <columns>
+          <TableColumn fx:id="materialname" prefWidth="217.5999755859375" style="-fx-background-radius: 20px;" styleClass="table" text="Material Name" />
+          <TableColumn fx:id="materialid" prefWidth="217.5999755859375" style="-fx-background-radius: 20px;" styleClass="table" text="Material Id" />
+            <TableColumn fx:id="supplierid" prefWidth="217.5999755859375" style="-fx-background-radius: 20px;" styleClass="table" text="Supplier Id" />
+            <TableColumn fx:id="amount" prefWidth="217.5999755859375" style="-fx-background-radius: 20px;" styleClass="table" text="Amount" />
+            <TableColumn fx:id="price" prefWidth="217.5999755859375" style="-fx-background-radius: 20px;" styleClass="table" text="Price" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchbar" layoutX="453.0" layoutY="103.0" prefHeight="33.0" prefWidth="370.0" promptText="          Searching Here" style="-fx-background-radius: 20px; -fx-border-color: black; -fx-border-radius: 20; -fx-background-color: transparent;" styleClass="panenew" stylesheets="@../assests/css/Colorgradient.css">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="searchbtn" layoutX="769.0" layoutY="104.0" mnemonicParsing="false" onAction="#searchbtnonaction" prefHeight="26.0" prefWidth="34.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/imgs/searchs.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Pane fx:id="displaypane" layoutX="321.0" layoutY="137.0" prefHeight="472.0" prefWidth="599.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10px;" visible="false">
+         <children>
+            <Text fx:id="nametxt" layoutX="213.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="315.9999237060547">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="nictxt" layoutX="187.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="283.1999969482422">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="gmailtxt" layoutX="200.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="389.59991455078125">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="addresstxt" layoutX="219.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="265.6000213623047">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="monumbertxt" layoutX="265.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="330.4000000000001">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="123.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bank Number : " wrappingWidth="131.2000732421875">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="idtxt" layoutX="176.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="199.99999999999994">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="26.0" fitWidth="190.0" layoutX="-1.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="26.0" fitWidth="190.0" layoutX="4.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+            <Line endX="-99.99998474121094" endY="355.79998779296875" layoutX="214.0" layoutY="58.0" startX="-100.0" />
+            <Text layoutX="128.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name : " wrappingWidth="81.59989929199219">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="129.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nic : " wrappingWidth="57.0">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="124.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gmail : " wrappingWidth="66.39994812011719">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="128.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adrress : " wrappingWidth="81.59989929199219">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="123.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number : " wrappingWidth="142.400146484375">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text fx:id="banknumbertxt1" layoutX="251.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="338.40008544921875">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="128.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id : " wrappingWidth="47.99999999999994">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
